@@ -4,9 +4,60 @@
 		<meta charset="UTF-8">
 		<title>Seat Reservations</title>
 		<link href="styles.css" rel="stylesheet">
+		<link
+		rel="stylesheet"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+		integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+		crossorigin="anonymous"
+	  />
 	</head>
 
 	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+			  <a class="navbar-brand" href="#">Church Seat Reservation</a>
+			  <button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			  >
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+	  
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+				  <li class="nav-item dropdown">
+					<a
+					  class="nav-link dropdown-toggle"
+					  href="#"
+					  id="navbarDropdown"
+					  role="button"
+					  data-toggle="dropdown"
+					  aria-haspopup="true"
+					  aria-expanded="false"
+					>
+					  Click Me!
+					</a>
+					<!-- Here's the magic. Add the .animate and .slide-in classes to your .dropdown-menu and you're all set! -->
+					<div
+					  class="dropdown-menu dropdown-menu-right animate slideIn"
+					  aria-labelledby="navbarDropdown"
+					>
+					  <a class="dropdown-item" href="signin.html">Login</a>
+					  <a class="dropdown-item" href="signup.html">Register</a>
+					  <div class="dropdown-divider"></div>
+					  <a class="dropdown-item" href="signin.html">Contact Us</a>
+					  <a class="dropdown-item" href="../seat-reservation/index.html">Reservation</a>
+					</div>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </nav>
 		<h1>Reserve Your Seats</h1>
 		
 		<div id="stage">Stage</div>
