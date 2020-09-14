@@ -11,33 +11,107 @@
       integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<div class="container">
-		  <a class="navbar-brand" href="#">Church Seat Reservation</a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon"></span>
-		</button>
-	  
-		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav ml-auto">
-			  <li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				Click Me!
-			  </a>
-				<!-- Here's the magic. Add the .animate and .slide-in classes to your .dropdown-menu and you're all set! -->
-				<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-				  <a class="dropdown-item" href="#">Action</a>
-				  <a class="dropdown-item" href="#">Another action</a>
-				  <div class="dropdown-divider"></div>
-				  <a class="dropdown-item" href="#">Something else here</a>
-				</div>
-			  </li>
-			</ul>
-		  </div>
-		</div>
-	  </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Church Seat Reservation</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Click Me!
+              </a>
+              <!-- Here's the magic. Add the .animate and .slide-in classes to your .dropdown-menu and you're all set! -->
+              <div
+                class="dropdown-menu dropdown-menu-right animate slideIn"
+                aria-labelledby="navbarDropdown"
+              >
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide One - Set the background image for this slide in the line below -->
+          <div
+            class="carousel-item active"
+            style="
+              background-image: url('https://source.unsplash.com/LAaSoL0LrYs/1920x1080');
+            "
+          >
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="display-4">Church Booking</h2>
+
+              <a
+                class="btn btn-primary"
+                href="pages/seat-reservation/index.html"
+                >Reserve</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="mt-5">
+      <div class="card">
+        <div class="card-header">
+          COVID RESTRICTIONS
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Government Regulations</h5>
+          <p class="card-text">Due to covid measures set by he govt. we allow a maximum of 100 attendees per sessions. Book for your spot and session below</p>
+          <a href="pages/seat-reservation/index.html" class="btn btn-primary">Reserve</a>
+        </div>
+      </div>
+    </main>
+
+    <div class="footer mt-5">
+      <p>Footer</p>
+    </div>
 
     <!-- javascro\ipt -->
     <!-- JavaScript and dependencies -->
