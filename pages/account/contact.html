@@ -10,12 +10,46 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
       integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
       crossorigin="anonymous"
-    />
+	/>
+	<style>
+		body {font-family: Arial, Helvetica, sans-serif;}
+		* {box-sizing: border-box;}
+		
+		input[type=text], select, textarea {
+		  width: 100%;
+		  padding: 12px;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  box-sizing: border-box;
+		  margin-top: 6px;
+		  margin-bottom: 16px;
+		  resize: vertical;
+		}
+		
+		input[type=submit] {
+		  background-color: #4CAF50;
+		  color: white;
+		  padding: 12px 20px;
+		  border: none;
+		  border-radius: 4px;
+		  cursor: pointer;
+		}
+		
+		input[type=submit]:hover {
+		  background-color: #45a049;
+		}
+		
+		.container {
+		  border-radius: 5px;
+		  background-color: #f2f2f2;
+		  padding: 20px;
+		}
+		</style>
   </head>
   <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container">
-		  <a class="navbar-brand" href="#">Church Seat Reservation</a>
+		  <a class="navbar-brand" href="../../index.html">Church Seat Reservation</a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		  <span class="navbar-toggler-icon"></span>
 		</button>
@@ -40,8 +74,29 @@
 	  </nav>
 	  
 	  <div class="container text-center">
-		<h1 class="mt-5 text-white font-weight-light">Animated Bootstrap Navbar Dropdowns</h1>
-		<p class="lead text-white-50">An attractive yet subtle dropdown animation for dropdown menus loacated within a Bootstrap navbar</p>
+		<h3>Contact Form</h3>
+
+		<div class="container">
+		  <form action="/action_page.php">
+			<label for="fname">First Name</label>
+			<input type="text" id="fname" name="firstname" placeholder="Your name..">
+		
+			<label for="lname">Last Name</label>
+			<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+		
+			<label for="country">Country</label>
+			<select id="country" name="country">
+			  <option value="australia">Australia</option>
+			  <option value="canada">Canada</option>
+			  <option value="usa">USA</option>
+			</select>
+		
+			<label for="subject">Subject</label>
+			<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+		
+			<input type="submit" value="Submit">
+		  </form>
+		</div>
 	  </div>
     <!-- javascro\ipt -->
     <!-- JavaScript and dependencies -->
